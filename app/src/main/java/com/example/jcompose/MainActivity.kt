@@ -14,6 +14,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.jcompose.ui.theme.JComposeTheme
 import com.example.jcompose.ui.theme.ui.Greeting
+import com.example.jcompose.ui.theme.ui.lazyNameList
 import com.example.jcompose.ui.theme.ui.myFlexScreenContent
 import com.example.jcompose.ui.theme.ui.myScreenContent
 
@@ -24,7 +25,9 @@ class MainActivity : ComponentActivity() {
             MyApp{
 //              myScreenContent(listOf("you","me"))
 //                myFlexScreenContent()
-                myFlexScreenContent()
+//                myFlexScreenContent()
+               val names: List<String> = List(1000) { "Hello Android #$it" }
+                lazyNameList(names = names)
             }
         }
     }
