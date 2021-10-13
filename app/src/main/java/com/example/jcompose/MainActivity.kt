@@ -23,6 +23,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             MyApp{
 //              myScreenContent(listOf("you","me"))
+//                myFlexScreenContent()
                 myFlexScreenContent()
             }
         }
