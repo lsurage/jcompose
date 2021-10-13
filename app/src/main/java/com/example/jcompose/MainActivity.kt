@@ -14,6 +14,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.jcompose.ui.theme.JComposeTheme
 import com.example.jcompose.ui.theme.ui.Greeting
+import com.example.jcompose.ui.theme.ui.myFlexScreenContent
 import com.example.jcompose.ui.theme.ui.myScreenContent
 
 class MainActivity : ComponentActivity() {
@@ -21,7 +22,8 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             MyApp{
-              myScreenContent(listOf("you","me"))
+//              myScreenContent(listOf("you","me"))
+                myFlexScreenContent()
             }
         }
     }
@@ -42,6 +44,7 @@ fun MyApp(content : @Composable () -> Unit) {
 @Composable
 fun DefaultPreview() {
     MyApp{
-       myScreenContent()
+//       myScreenContent()
+        myFlexScreenContent()
     }
 }
