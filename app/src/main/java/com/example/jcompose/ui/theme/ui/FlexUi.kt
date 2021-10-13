@@ -18,12 +18,15 @@ fun myFlexScreenContent(list: List<String> = listOf("lokesh","shweta")){
 
     Column(Modifier.fillMaxHeight()) {
         Column(Modifier.weight(1f)) {
-            list.forEach {
-                Greeting(name = it)
-                Divider(thickness = 2.dp)
-            }
+//            list.forEach {
+//                Greeting(name = it)
+//                Divider(thickness = 2.dp)
+//            }
 
+            val names: List<String> = List(30) { "Hello Android #$it" }
+            lazyNameList(names = names)
         }
+
         counterStateHoisting(count = counterState.value, updateCount = {
             counterState.value = it
         })

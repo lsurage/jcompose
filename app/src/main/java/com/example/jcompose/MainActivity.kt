@@ -25,9 +25,8 @@ class MainActivity : ComponentActivity() {
             MyApp{
 //              myScreenContent(listOf("you","me"))
 //                myFlexScreenContent()
-//                myFlexScreenContent()
-               val names: List<String> = List(1000) { "Hello Android #$it" }
-                lazyNameList(names = names)
+                myFlexScreenContent()
+
             }
         }
     }
